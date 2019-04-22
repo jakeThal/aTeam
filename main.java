@@ -11,15 +11,12 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-//This is a comment :)
-//Clarence edited. 
-//wow 
-//Hunter Celeste has editted this
-// alex edit is the best
-//I have overwritten alex's line
 
-//Hey this will work
-
+/**
+ * This is the main driver for the quiz generator.
+ * @author jthalacker
+ *
+ */
 public class main extends Application{
 
   public void start(Stage primaryStage) {
@@ -61,14 +58,15 @@ public class main extends Application{
       chosenTopicsListView.setMaxSize(175, 100);
       Button dontSaveAndQuitButton = new Button("Quit Without Saving");
       
+      //vbox and hbox creation/updates
       addAndClear.getChildren().addAll(addTopicButton, clearTopicListButton);
       vBox1.getChildren().addAll(makeQuestionButton, loadQuizButton, takeTestButton, saveAndQuitButton);
       vBox2.getChildren().addAll(numQuestionsTextField, loadedTopicsComboBox, 
           addAndClear, chosenTopicListLabel, chosenTopicsListView, dontSaveAndQuitButton);
       root.getChildren().addAll(vBox1, vBox2);
       
+      //Create scene and update stage
       Scene scene = new Scene(root,350,300);
-      //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
       primaryStage.setScene(scene);
       primaryStage.setTitle("Quiz Generator");
       primaryStage.show();
