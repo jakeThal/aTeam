@@ -67,7 +67,7 @@ public class main extends Application{
           addAndClear, chosenTopicListLabel, chosenTopicsListView, dontSaveAndQuitButton);
       root.getChildren().addAll(vBox1, vBox2);
       
-      Scene scene = new Scene(root,325,275);
+      Scene scene = new Scene(root,350,300);
       //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
       primaryStage.setScene(scene);
       primaryStage.setTitle("Quiz Generator");
