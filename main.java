@@ -66,14 +66,10 @@ public class main extends Application{
       root.getChildren().addAll(vBox1, vBox2);
       
       //Create scene and update stage
-      Scene scene = new Scene(root,800,600);
+      Scene scene = new Scene(root,375,350);
       primaryStage.setScene(scene);
       primaryStage.setTitle("Quiz Generator");
       primaryStage.show();
-      
-      
-      
-      
       
       
     }catch(Exception e) {
